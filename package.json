@@ -1,0 +1,39 @@
+{
+    "name": "studytracks",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "test": "jest",
+        "test:watch": "jest --watch"
+    },
+    "dependencies": {
+        "@tailwindcss/forms": "^0.4.0",
+        "luxon": "^2.3.0",
+        "next": "12.0.7",
+        "next-localization": "^0.11.0",
+        "react": "^17.0.2",
+        "react-dom": "17.0.2"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^5.16.1",
+        "@testing-library/react": "^12.1.2",
+        "@types/luxon": "^2.0.9",
+        "@types/node": "^17.0.12",
+        "@types/react": "^17.0.38",
+        "@typescript-eslint/eslint-plugin": "^5.10.1",
+        "@typescript-eslint/parser": "^5.10.1",
+        "autoprefixer": "^10.4.2",
+        "eslint": "^8.7.0",
+        "eslint-config-next": "12.0.7",
+        "eslint-plugin-react": "^7.28.0",
+        "eslint-plugin-tailwindcss": "^3.3.4",
+        "jest": "^27.4.7",
+        "postcss": "^8.4.5",
+        "tailwindcss": "^3.0.16",
+        "typescript": "^4.5.5"
+    }
+}

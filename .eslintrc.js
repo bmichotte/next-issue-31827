@@ -1,0 +1,71 @@
+module.exports = {
+    globals: {
+        JSX: 'readonly',
+    },
+    env: {
+        browser: true,
+        es6: true,
+        node: true,
+    },
+    parser: '@typescript-eslint/parser',
+    plugins: [
+        '@typescript-eslint',
+        'tailwindcss',
+    ],
+    extends: [
+        'next',
+        'next/core-web-vitals',
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:tailwindcss/recommended',
+    ],
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        },
+        ecmaVersion: 2018,
+        sourceType: 'module',
+    },
+    root: true,
+    rules: {
+        'no-use-before-define': ['off'],
+        '@typescript-eslint/no-use-before-define': [1],
+        '@typescript-eslint/no-empty-function': 'off',
+        'comma-dangle': ['error', {
+            arrays: 'always-multiline',
+            objects: 'always-multiline',
+            imports: 'always-multiline',
+            exports: 'always-multiline',
+            functions: 'never',
+        }],
+        semi: ['error', 'never'],
+        indent: ['error', 4, {
+            SwitchCase: 1,
+        }],
+        'no-unused-vars': 'off',
+        'no-undef': 'error',
+        quotes: ['error', 'single'],
+        'space-before-function-paren': 'off',
+        'require-await': 'off',
+        'newline-before-return': 'error',
+        'css-semicolonexpected': 'off',
+        'object-curly-spacing': ['error', 'always'],
+        '@typescript-eslint/no-empty-interface': 'off',
+        '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+        '@typescript-eslint/no-unused-vars': 'warn',
+        'jsx-quotes': ['error', 'prefer-double'],
+        'react-hooks/exhaustive-deps': 'off',
+        'tailwindcss/classnames-order': 'warn',
+        'tailwindcss/enforces-shorthand': 'warn',
+        'tailwindcss/migration-from-tailwind-2': 'warn',
+        'tailwindcss/no-arbitrary-value': 'off',
+        'tailwindcss/no-custom-classname': 'off',
+        'tailwindcss/no-contradicting-classname': 'error',
+    },
+    settings: {
+        react: {
+            pragma: 'React',
+            version: 'detect',
+        },
+    },
+}
